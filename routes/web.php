@@ -43,12 +43,12 @@ Route::middleware('auth')->group(function () {
     });
     Route::controller(CategoryController::class)->group(function(){
         Route::get('/categories', 'index')->name('category.index');
-        Route::get('/category/create', 'create')->name('category.create');
-        Route::post('/category/store', 'store')->name('category.store');
-        Route::get('/category/{category}/show', 'show')->name('category.show');
-        Route::get('/category/{category}/edit', 'edit')->name('category.edit');
-        Route::put('/category/{category}/update', 'update')->name('category.update');
-        Route::delete('/category/{category}/destroy', 'destroy')->name('category.destroy');
+        Route::get('/categories/create', 'create')->name('category.create');
+        Route::post('/categories/store', 'store')->name('category.store');
+        Route::get('/categories/{category}/show', 'show')->name('category.show');
+        Route::get('/categories/{category}/edit', 'edit')->name('category.edit');
+        Route::put('/categories/{category}/update', 'update')->name('category.update');
+        Route::delete('/categories/{category}/destroy', 'destroy')->name('category.destroy');
     });
 });
 
